@@ -1,0 +1,45 @@
+/*Generate the button props for different color */
+@each $color in $colors-button {
+  .btn-#{nth($color,1)}{
+    color: nth($color,2) !important;
+    background-color: mix(nth($color,2),#fff, 15%);
+    border:2px solid mix(nth($color,2),#fff, 15%);
+    &:hover{
+      background-color: transparent;
+      transition:all .3s;
+    }
+  }
+
+}
+/**END SECTION*/
+
+/**NORMALIZE THE BUTTON CLASS**/
+.btn{
+  text-shadow:none;
+  box-shadow:none;
+  outline: none;
+  cursor:pointer;
+  box-sizing:border-box;
+
+  text-decoration: none !important;
+  text-align:center;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+
+
+  padding: 10px;
+  margin:0 5px 0 5px;
+  display:inline-block;
+  position: relative;
+  min-height:35px;
+
+  @include border-radius($border-radius-size);
+
+}
+/** END SECTION */
+
+
+
+
+

@@ -1,0 +1,120 @@
+
+@mixin field($value : 'text'){
+
+}
+
+
+.field{
+  position: relative;
+  height: 64px;
+  padding: 16px 0 6px 0;
+
+
+  .field-label{
+    position: relative;
+    margin: 0;
+    display: block;
+
+    color:  #bfbfbf;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 400;
+
+    transform: translateY(26px);
+    transition: transform 0.3s, color 0.3s;
+    transform-origin: 0 50%;
+  }
+
+  .field-input{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 8px 0 16px 0;
+
+    line-height: 18px;
+    font-family: Roboto;
+    font-size: 16px;
+
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+  }
+
+  &::after, &::before{
+    content:'';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    z-index: 1;
+
+    background-color: #e6e6e6;
+  }
+
+  &::after{
+    background-color: #880096;
+    transform: scaleX(0);
+    transform-origin: 30px ;
+    transition-duration: 1s;
+    transition: transform 0.3s;
+    z-index: 3;
+  }
+
+  &.has-label .field-label{
+    transform: translateY(0) scale(0.75);
+  }
+
+  &.is-focused .field-label{
+    color: #880096;
+  }
+  &.is-focused::after{
+    transform: scaleX(1);
+    //    background-color: #fff;
+  }
+  &.has-label .helper{
+    display: block;
+
+  }
+
+
+  .helper{
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: relative;
+
+
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Roboto;
+    line-height: 12px;
+  }
+  hr{
+    padding: 0;
+    margin: 0;
+    background-color: red;
+    width: 100%;
+    height: 2px;
+    border: none;
+    position: absolute;
+    bottom: 16px;
+    z-index: 2;
+
+    transform-origin: 30px;
+    transform: scaleX(0);
+
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation:transform 0.3;
+  }
+  &.has-label hr{
+    transform: scaleX(1);
+
+  }
+  .invisible{
+    display: none;
+  }
+}
+

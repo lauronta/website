@@ -1,0 +1,72 @@
+/*Generate the button props for different color */
+@each $color in $colors-badge {
+  .bdg-#{nth($color,1)}{
+    color: mix(nth($dark,2),nth($color,2),40%);
+    // color: nth($color,2) !important;
+    background-color: mix(nth($color,2),#fff, 15%);
+  }
+
+}
+/**END SECTION*/
+
+/**NORMALIZE THE BUTTON CLASS**/
+.bdg{
+  text-shadow:none;
+  box-shadow:none;
+  outline: none;
+  cursor:default;
+
+
+  font-size: 14px;
+  vertical-align: middle;
+
+
+  text-decoration: none !important;
+  text-align:center;
+  text-transform: lowercase;
+
+  padding: 5px;
+  margin:0 5px 0 5px;
+  display:inline-block;
+  position: relative;
+  min-height:10px;
+  @include border-radius($border-radius-size);
+  &.notif{
+    cursor:pointer;
+    width: 20px;
+    height:15px;
+    padding: 2px;
+
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle !important;
+
+    background-color: nth($secondary,2);
+    color:white;
+  }
+  &.pill{
+    text-shadow:none;
+    box-shadow:none;
+    outline: none;
+    cursor:pointer;
+
+
+
+
+    padding:0 5px;
+    margin:0 5px 0 5px;
+    display:inline-block;
+    position: relative;
+    min-height:10px;
+    @include border-radius(20px);
+
+  }
+}
+/** END SECTION */
+
+
+
+
+

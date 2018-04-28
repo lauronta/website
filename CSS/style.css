@@ -1,0 +1,955 @@
+/** This is the files who set the different variables through the css template
+    You can here modify them to adapt the different colors and oder
+    All the information are on the wiki
+ */
+/**** VARIABLES FOR THE GRID*******/
+/****END SECTION *****/
+/**** VARIABLES FOR COLORS*******/
+/****END SECTION *****/
+/* line 1, ../SASS/grid.scss */
+.col-1, .col-m-1, .col-l-1, .col-xl-1, .col-s-1, .col-2, .col-m-2, .col-l-2, .col-xl-2, .col-s-2, .col-3, .col-m-3, .col-l-3, .col-xl-3, .col-s-3, .col-4, .col-m-4, .col-l-4, .col-xl-4, .col-s-4, .col-5, .col-m-5, .col-l-5, .col-xl-5, .col-s-5, .col-6, .col-m-6, .col-l-6, .col-xl-6, .col-s-6, .col-7, .col-m-7, .col-l-7, .col-xl-7, .col-s-7, .col-8, .col-m-8, .col-l-8, .col-xl-8, .col-s-8, .col-9, .col-m-9, .col-l-9, .col-xl-9, .col-s-9, .col-10, .col-m-10, .col-l-10, .col-xl-10, .col-s-10, .col-11, .col-m-11, .col-l-11, .col-xl-11, .col-s-11, .col-12, .col-m-12, .col-l-12, .col-xl-12, .col-s-12 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding: 0 10px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+/* line 11, ../SASS/grid.scss */
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+/* line 16, ../SASS/grid.scss */
+.row:after {
+  clear: both;
+}
+/* line 19, ../SASS/grid.scss */
+.row {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* CLASS */
+/* line 37, ../SASS/grid.scss */
+.row {
+  margin: 0 -10px;
+}
+
+/* line 41, ../SASS/grid.scss */
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+/* END SECTION */
+/* line 26, ../SASS/grid.scss */
+.col-1 {
+  width: 8.33333%;
+}
+
+/* line 26, ../SASS/grid.scss */
+.col-2 {
+  width: 16.66667%;
+}
+
+/* line 26, ../SASS/grid.scss */
+.col-3 {
+  width: 25%;
+}
+
+/* line 26, ../SASS/grid.scss */
+.col-4 {
+  width: 33.33333%;
+}
+
+/* line 26, ../SASS/grid.scss */
+.col-5 {
+  width: 41.66667%;
+}
+
+/* line 26, ../SASS/grid.scss */
+.col-6 {
+  width: 50%;
+}
+
+/* line 26, ../SASS/grid.scss */
+.col-7 {
+  width: 58.33333%;
+}
+
+/* line 26, ../SASS/grid.scss */
+.col-8 {
+  width: 66.66667%;
+}
+
+/* line 26, ../SASS/grid.scss */
+.col-9 {
+  width: 75%;
+}
+
+/* line 26, ../SASS/grid.scss */
+.col-10 {
+  width: 83.33333%;
+}
+
+/* line 26, ../SASS/grid.scss */
+.col-11 {
+  width: 91.66667%;
+}
+
+/* line 26, ../SASS/grid.scss */
+.col-12 {
+  width: 100%;
+}
+
+/* line 30, ../SASS/grid.scss */
+.col-center {
+  margin: 0 auto;
+  float: none;
+}
+
+@media only screen and (min-width: 576px) {
+  /* line 26, ../SASS/grid.scss */
+  .col-s-1 {
+    width: 8.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-s-2 {
+    width: 16.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-s-3 {
+    width: 25%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-s-4 {
+    width: 33.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-s-5 {
+    width: 41.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-s-6 {
+    width: 50%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-s-7 {
+    width: 58.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-s-8 {
+    width: 66.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-s-9 {
+    width: 75%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-s-10 {
+    width: 83.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-s-11 {
+    width: 91.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-s-12 {
+    width: 100%;
+  }
+
+  /* line 30, ../SASS/grid.scss */
+  .col-s-center {
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 26, ../SASS/grid.scss */
+  .col-m-1 {
+    width: 8.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-m-2 {
+    width: 16.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-m-3 {
+    width: 25%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-m-4 {
+    width: 33.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-m-5 {
+    width: 41.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-m-6 {
+    width: 50%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-m-7 {
+    width: 58.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-m-8 {
+    width: 66.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-m-9 {
+    width: 75%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-m-10 {
+    width: 83.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-m-11 {
+    width: 91.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-m-12 {
+    width: 100%;
+  }
+
+  /* line 30, ../SASS/grid.scss */
+  .col-m-center {
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 26, ../SASS/grid.scss */
+  .col-l-1 {
+    width: 8.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-l-2 {
+    width: 16.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-l-3 {
+    width: 25%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-l-4 {
+    width: 33.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-l-5 {
+    width: 41.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-l-6 {
+    width: 50%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-l-7 {
+    width: 58.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-l-8 {
+    width: 66.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-l-9 {
+    width: 75%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-l-10 {
+    width: 83.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-l-11 {
+    width: 91.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-l-12 {
+    width: 100%;
+  }
+
+  /* line 30, ../SASS/grid.scss */
+  .col-l-center {
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-1 {
+    width: 8.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-2 {
+    width: 16.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-3 {
+    width: 25%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-4 {
+    width: 33.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-5 {
+    width: 41.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-6 {
+    width: 50%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-7 {
+    width: 58.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-8 {
+    width: 66.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-9 {
+    width: 75%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-10 {
+    width: 83.33333%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-11 {
+    width: 91.66667%;
+  }
+
+  /* line 26, ../SASS/grid.scss */
+  .col-xl-12 {
+    width: 100%;
+  }
+
+  /* line 30, ../SASS/grid.scss */
+  .col-xl-center {
+    margin: 0 auto;
+    float: none;
+  }
+
+  /* line 67, ../SASS/grid.scss */
+  .container {
+    width: 1180px;
+  }
+}
+/**
+  This is the button to go on the top of the page
+ */
+/* line 4, ../SASS/_gotop.scss */
+.gotop {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: rgba(136, 0, 150, 0.6);
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  transition: opacity .5s,background-color .3s;
+}
+
+/* line 18, ../SASS/_gotop.scss */
+.gotop svg {
+  opacity: .80;
+  margin: 5px;
+}
+
+/* line 22, ../SASS/_gotop.scss */
+.gotop:hover {
+  background-color: rgba(159, 0, 176, 0.8);
+}
+
+/* line 25, ../SASS/_gotop.scss */
+.gotop:hover svg {
+  opacity: 1;
+}
+
+/* line 28, ../SASS/_gotop.scss */
+.gotop svg path {
+  stroke: #00b09f;
+}
+
+/* line 32, ../SASS/_gotop.scss */
+.gotop:hover svg path {
+  stroke: #00baa8;
+}
+
+/*end section*/
+/* line 7, ../SASS/_field.scss */
+.field {
+  position: relative;
+  height: 64px;
+  padding: 16px 0 6px 0;
+}
+/* line 13, ../SASS/_field.scss */
+.field .field-label {
+  position: relative;
+  margin: 0;
+  display: block;
+  color: #bfbfbf;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  transform: translateY(26px);
+  transition: transform 0.3s, color 0.3s;
+  transform-origin: 0 50%;
+}
+/* line 28, ../SASS/_field.scss */
+.field .field-input {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 8px 0 16px 0;
+  line-height: 18px;
+  font-family: Roboto;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+/* line 44, ../SASS/_field.scss */
+.field::after, .field::before {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  z-index: 1;
+  background-color: #e6e6e6;
+}
+/* line 56, ../SASS/_field.scss */
+.field::after {
+  background-color: #880096;
+  transform: scaleX(0);
+  transform-origin: 30px;
+  transition-duration: 1s;
+  transition: transform 0.3s;
+  z-index: 3;
+}
+/* line 65, ../SASS/_field.scss */
+.field.has-label .field-label {
+  transform: translateY(0) scale(0.75);
+}
+/* line 69, ../SASS/_field.scss */
+.field.is-focused .field-label {
+  color: #880096;
+}
+/* line 72, ../SASS/_field.scss */
+.field.is-focused::after {
+  transform: scaleX(1);
+}
+/* line 76, ../SASS/_field.scss */
+.field.has-label .helper {
+  display: block;
+}
+/* line 82, ../SASS/_field.scss */
+.field .helper {
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Roboto;
+  line-height: 12px;
+}
+/* line 94, ../SASS/_field.scss */
+.field hr {
+  padding: 0;
+  margin: 0;
+  background-color: red;
+  width: 100%;
+  height: 2px;
+  border: none;
+  position: absolute;
+  bottom: 16px;
+  z-index: 2;
+  transform-origin: 30px;
+  transform: scaleX(0);
+  animation-delay: 0.3s;
+  animation-duration: 1s;
+  animation: transform 0.3;
+}
+/* line 112, ../SASS/_field.scss */
+.field.has-label hr {
+  transform: scaleX(1);
+}
+/* line 116, ../SASS/_field.scss */
+.field .invisible {
+  display: none;
+}
+
+/*Generate the button props for different color */
+/* line 3, ../SASS/_button.scss */
+.btn-danger {
+  color: #e81123 !important;
+  background-color: #fcdbde;
+  border: 2px solid #fcdbde;
+}
+/* line 7, ../SASS/_button.scss */
+.btn-danger:hover {
+  background-color: transparent;
+  transition: all .3s;
+}
+
+/* line 3, ../SASS/_button.scss */
+.btn-primary {
+  color: #009688 !important;
+  background-color: #d9efed;
+  border: 2px solid #d9efed;
+}
+/* line 7, ../SASS/_button.scss */
+.btn-primary:hover {
+  background-color: transparent;
+  transition: all .3s;
+}
+
+/* line 3, ../SASS/_button.scss */
+.btn-secondary {
+  color: #880096 !important;
+  background-color: #edd9ef;
+  border: 2px solid #edd9ef;
+}
+/* line 7, ../SASS/_button.scss */
+.btn-secondary:hover {
+  background-color: transparent;
+  transition: all .3s;
+}
+
+/* line 3, ../SASS/_button.scss */
+.btn-dark {
+  color: black !important;
+  background-color: #d9d9d9;
+  border: 2px solid #d9d9d9;
+}
+/* line 7, ../SASS/_button.scss */
+.btn-dark:hover {
+  background-color: transparent;
+  transition: all .3s;
+}
+
+/* line 3, ../SASS/_button.scss */
+.btn-light {
+  color: white !important;
+  background-color: white;
+  border: 2px solid white;
+}
+/* line 7, ../SASS/_button.scss */
+.btn-light:hover {
+  background-color: transparent;
+  transition: all .3s;
+}
+
+/**END SECTION*/
+/**NORMALIZE THE BUTTON CLASS**/
+/* line 17, ../SASS/_button.scss */
+.btn {
+  text-shadow: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 5px 0 5px;
+  display: inline-block;
+  position: relative;
+  min-height: 35px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/** END SECTION */
+/*Generate the button props for different color */
+/* line 3, ../SASS/_badge.scss */
+.bdg-primary {
+  color: #005a52;
+  background-color: #d9efed;
+}
+
+/* line 3, ../SASS/_badge.scss */
+.bdg-dark {
+  color: black;
+  background-color: #d9d9d9;
+}
+
+/* line 3, ../SASS/_badge.scss */
+.bdg-secondary {
+  color: #52005a;
+  background-color: #edd9ef;
+}
+
+/* line 3, ../SASS/_badge.scss */
+.bdg-light {
+  color: #999999;
+  background-color: white;
+}
+
+/* line 3, ../SASS/_badge.scss */
+.bdg-warning {
+  color: #917609;
+  background-color: #fdf6db;
+}
+
+/**END SECTION*/
+/**NORMALIZE THE BUTTON CLASS**/
+/* line 13, ../SASS/_badge.scss */
+.bdg {
+  text-shadow: none;
+  box-shadow: none;
+  outline: none;
+  cursor: default;
+  font-size: 14px;
+  vertical-align: middle;
+  text-decoration: none !important;
+  text-align: center;
+  text-transform: lowercase;
+  padding: 5px;
+  margin: 0 5px 0 5px;
+  display: inline-block;
+  position: relative;
+  min-height: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 34, ../SASS/_badge.scss */
+.bdg.notif {
+  cursor: pointer;
+  width: 20px;
+  height: 15px;
+  padding: 2px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: middle !important;
+  background-color: #880096;
+  color: white;
+}
+/* line 49, ../SASS/_badge.scss */
+.bdg.pill {
+  text-shadow: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 5px;
+  margin: 0 5px 0 5px;
+  display: inline-block;
+  position: relative;
+  min-height: 10px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+/** END SECTION */
+/*Generate the different color for alert*/
+/* line 3, ../SASS/_alert.scss */
+.alert-danger {
+  color: #e81123;
+  background-color: #fcdbde;
+  border: 1px solid #b80e1c;
+}
+/* line 7, ../SASS/_alert.scss */
+.alert-danger .alert-link {
+  color: #890a15;
+}
+/* line 10, ../SASS/_alert.scss */
+.alert-danger hr {
+  background-color: #d00f1f;
+}
+
+/* line 3, ../SASS/_alert.scss */
+.alert-primary {
+  color: #009688;
+  background-color: #d9efed;
+  border: 1px solid #00635a;
+}
+/* line 7, ../SASS/_alert.scss */
+.alert-primary .alert-link {
+  color: #00302c;
+}
+/* line 10, ../SASS/_alert.scss */
+.alert-primary hr {
+  background-color: #007d71;
+}
+
+/* line 3, ../SASS/_alert.scss */
+.alert-secondary {
+  color: #880096;
+  background-color: #edd9ef;
+  border: 1px solid #5a0063;
+}
+/* line 7, ../SASS/_alert.scss */
+.alert-secondary .alert-link {
+  color: #2c0030;
+}
+/* line 10, ../SASS/_alert.scss */
+.alert-secondary hr {
+  background-color: #71007d;
+}
+
+/* line 3, ../SASS/_alert.scss */
+.alert-success {
+  color: #159b15;
+  background-color: #dcf0dc;
+  border: 1px solid #0f6e0f;
+}
+/* line 7, ../SASS/_alert.scss */
+.alert-success .alert-link {
+  color: #094109;
+}
+/* line 10, ../SASS/_alert.scss */
+.alert-success hr {
+  background-color: #128512;
+}
+
+/* line 3, ../SASS/_alert.scss */
+.alert-info {
+  color: #3498db;
+  background-color: #e1f0fa;
+  border: 1px solid #217dbb;
+}
+/* line 7, ../SASS/_alert.scss */
+.alert-info .alert-link {
+  color: #196090;
+}
+/* line 10, ../SASS/_alert.scss */
+.alert-info hr {
+  background-color: #258cd1;
+}
+
+/* line 3, ../SASS/_alert.scss */
+.alert-warning {
+  color: #f1c40f;
+  background-color: #fdf6db;
+  border: 1px solid #c29d0b;
+}
+/* line 7, ../SASS/_alert.scss */
+.alert-warning .alert-link {
+  color: #927608;
+}
+/* line 10, ../SASS/_alert.scss */
+.alert-warning hr {
+  background-color: #dab10d;
+}
+
+/**END SECTION*/
+/**NORMALIZE THE ALERT CLASS**/
+/* line 18, ../SASS/_alert.scss */
+.alert {
+  position: relative;
+  display: block;
+  padding: 7.5px 10px;
+  margin-bottom: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/** END SECTION */
+/* line 1, ../SASS/_header.scss */
+.topbar {
+  z-index: 10;
+  width: 100%;
+  height: 66px;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 150, 136, 0.95);
+  box-shadow: 0 2px 10px rgba(109, 122, 139, 0.1);
+}
+/* line 12, ../SASS/_header.scss */
+.topbar svg {
+  position: relative;
+  float: left;
+}
+
+/* line 18, ../SASS/_header.scss */
+.topbar-nav {
+  float: left;
+}
+/* line 20, ../SASS/_header.scss */
+.topbar-nav a {
+  color: #860094;
+  height: 66px;
+  padding: 0 10px;
+  vertical-align: middle;
+  line-height: 66px;
+  float: left;
+}
+/* line 27, ../SASS/_header.scss */
+.topbar-nav a:hover {
+  color: #f1f1f1;
+  transition: .3s;
+}
+
+/* line 36, ../SASS/_header.scss */
+.topbar-right {
+  position: relative;
+  height: 66px;
+  float: right;
+  vertical-align: middle;
+}
+/* line 41, ../SASS/_header.scss */
+.topbar-right:first-child {
+  margin: auto 0;
+}
+
+/* line 46, ../SASS/_header.scss */
+.topbar-center {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 50, ../SASS/_header.scss */
+.is-hidden {
+  transform: translateY(-140%);
+  transition: .3s;
+}
+
+/* line 55, ../SASS/_header.scss */
+.container {
+  position: relative;
+}
+
+/* line 58, ../SASS/_header.scss */
+.topbar-input {
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  height: 35px;
+  width: 35px;
+  box-sizing: border-box;
+  transition: all .5s;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  line-height: 16px;
+  font-size: 16px;
+}
+/* line 79, ../SASS/_header.scss */
+.topbar-input:focus, .topbar-input:hover {
+  width: 200px;
+  border: 1px solid blue;
+  transition: all .5s;
+}
+
+/* line 7, ../SASS/_normalize.scss */
+body {
+  background-color: #fcffff;
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* line 18, ../SASS/_normalize.scss */
+a {
+  text-decoration: none;
+  color: #880096;
+}
+
+/* line 22, ../SASS/_normalize.scss */
+h1 {
+  margin: 2px 0;
+  padding: 1% 0;
+  font-size: 3em;
+  font-weight: 700;
+  color: #303030;
+}
+
+/* line 29, ../SASS/_normalize.scss */
+h2 {
+  margin: 2px 0;
+  padding: 0.5% 0;
+  font-size: 2em;
+  font-weight: 500;
+  color: #303030;
+}
+
+/* line 36, ../SASS/_normalize.scss */
+h3 {
+  padding: 0.25% 0;
+  margin: 2px 0;
+  font-weight: normal;
+  font-size: 1.75em;
+  color: #303030;
+}
+
+/*end normalize*/
+/*dev tools*/
+/* line 47, ../SASS/_normalize.scss */
+.box {
+  border: solid #880096 1px;
+}

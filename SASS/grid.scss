@@ -1,0 +1,70 @@
+%col{
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding: 0 $gutter * 0.5;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+%clearfix{
+  &:before,
+  &:after {
+    content:"";
+    display:table;
+  }
+  &:after {
+    clear:both;
+  }
+  & {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+  }
+}
+
+@mixin col-respons($suffix: ''){
+  @for $i from 1 through $columns {
+    .col#{$suffix}-#{$i} {
+      width: $i / $columns * 100%;
+    }
+  }
+  .col#{$suffix}-center{
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+/* CLASS */
+.row{
+  margin: 0 $gutter * -0.5;
+  @extend %clearfix;
+}
+.container{
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+/* END SECTION */
+@include col-respons();
+@for $i from 1 through $columns{
+  .col-#{$i}, .col-m-#{$i}, .col-l-#{$i}, .col-xl-#{$i}, .col-s-#{$i}{@extend %col}
+}
+
+@media only screen and (min-width: $small) {
+  @include col-respons('-s');
+}
+
+@media only screen and (min-width: $medium) {
+  @include col-respons('-m');
+}
+
+@media only screen and (min-width: $large) {
+  @include col-respons('-l');
+}
+
+@media only screen and (min-width: $extra-large) {
+  @include col-respons('-xl');
+  .container{
+    width: $extra-large - $gutter;
+  }
+}
