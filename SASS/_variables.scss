@@ -1,0 +1,34 @@
+/** This is the files who set the different variables through the css template
+    You can here modify them to adapt the different colors and oder
+    All the information are on the wiki
+ */
+/**** VARIABLES FOR THE GRID*******/
+$columns : 12!default;
+$gutter : 20px!default;
+
+$small:576px;
+$medium:768px;
+$large:992px;
+$extra-large:1200px;
+/****END SECTION *****/
+
+
+/**** VARIABLES FOR COLORS*******/
+$danger :danger #e81123;
+$success :success #159b15;
+$warning: warning #f1c40f;
+$info:info #3498db;
+$primary:primary rgba(0, 150, 136,1);
+$secondary:secondary rgba(136, 0, 150,1);
+$background: rgba(241, 241, 241,1);
+
+
+$light:light white;
+$dark:dark black;
+
+$colors-alert :$danger,$primary,$secondary,$success,$info,$warning;
+$colors-button: $danger,$primary,$secondary, $dark, $light;
+$colors-badge:$primary,$dark,$secondary,$light,$warning;
+/****END SECTION *****/
+
+$border-radius-size :5px;

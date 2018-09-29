@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>lauronta</title>
+		<meta name="description" content="test webpage for the lauronta framework">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../CSS/style.css">
+		<link rel="stylesheet" href="../CSS/grid_css.css">
+		<link rel="stylesheet" href="../CSS/icomoon/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	</head>
+	<body>
+	<div class="header">
+		<nav class="topbar-nav">
+			<a href="" class="navbar-item active">Acceuil</a>
+			<a href="" class="navbar-item">Home</a>
+			<a href="" class="navbar-item">Wilkommen</a>
+
+		</nav>
+	</div>
+	<div class="grid_container">
+		<div class="hero"></div>
+			<div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+        (function($){
+
+            $('.navbar-item').click(function(e){
+                e.preventDefault();
+                $('.navbar-item').toggleClass('active');
+            });
+
+
+
+        })(jQuery);
+
+	</script>
+</html>

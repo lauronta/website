@@ -1,0 +1,30 @@
+/*Generate the different color for alert*/
+@each $color in $colors-alert {
+  .alert-#{nth($color,1)}{
+    color: nth($color,2);
+    background-color: mix(nth($color,2),#fff, 15%);
+    border:1px solid darken(nth($color,2),10%);
+    .alert-link {
+      color: darken(nth($color,2),20%);
+    }
+    hr {
+      background-color: darken(nth($color,2),5%);
+    }
+  }
+}
+/**END SECTION*/
+
+/**NORMALIZE THE ALERT CLASS**/
+.alert{
+  position: relative;
+  display: block;
+  padding: 7.5px 10px;
+  margin-bottom: 10px ;
+  @include border-radius($border-radius-size);
+}
+/** END SECTION */
+
+
+
+
+

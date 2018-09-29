@@ -1,5 +1,5 @@
 # Hello World
-This is my Github repository for my website project
+This is the Github repository of my website project. You can here find all you need.
 
 ## CSS
 I'm currently working on this part of the project. I would make a CSS template based principaly on current template like [Bootstrap](http://getbootstrap.com/). 

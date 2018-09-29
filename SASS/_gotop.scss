@@ -1,0 +1,36 @@
+/**
+  This is the button to go on the top of the page
+ */
+.gotop{
+  box-sizing: border-box;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  bottom:15px;
+  right:15px;
+  background-color: transparentize(nth($secondary,2),.40);
+  border-radius: 4px;
+  width: 40px;
+  height:40px;
+  transition: opacity .5s,background-color .3s;
+
+}
+.gotop svg{
+  opacity: .80;
+  margin: 5px;
+}
+.gotop:hover{
+  background-color: transparentize(lighten(nth($secondary,2), 5%),.20);
+}
+.gotop:hover svg{
+  opacity: 1;
+}
+.gotop svg path{
+  stroke: lighten(nth($primary,2), 5%);
+
+}
+.gotop:hover svg path{
+  stroke: lighten(nth($primary,2), 7%);
+}
+
+/*end section*/

@@ -1,0 +1,52 @@
+@import "_gotop.scss";
+@import "_field.scss";
+@import "button";
+@import "badge";
+@import "alert";
+@import "header";
+@import "footer";
+body{
+  background-color: lighten(nth($primary,2), 70%);
+  margin:0;
+  padding:0;
+  font-family:roboto, sans-serif;
+  font-weight:400;
+  overflow-x: hidden;
+}
+
+
+
+a{
+  text-decoration: none;
+  color: nth($secondary,2);
+}
+h1{
+  margin:2px 0;
+  padding:1% 0;
+  font-size:3em;
+  font-weight: 700;
+  color: #303030;
+}
+h2{
+  margin:2px 0;
+  padding:0.5% 0;
+  font-size:2em;
+  font-weight: 500;
+  color: #303030;
+}
+h3{
+  padding:0.25% 0;
+  margin:2px 0;
+  font-weight: normal;
+  font-size:1.75em;
+  color: #303030;
+}
+/*end normalize*/
+
+
+/*dev tools*/
+
+.box{
+  border: solid nth($secondary,2) 1px ;
+}
+
