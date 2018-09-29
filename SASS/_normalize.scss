@@ -4,6 +4,7 @@
 @import "badge";
 @import "alert";
 @import "header";
+@import "footer";
 body{
   background-color: lighten(nth($primary,2), 70%);
   margin:0;
@@ -44,6 +45,7 @@ h3{
 
 
 /*dev tools*/
+
 .box{
   border: solid nth($secondary,2) 1px ;
 }

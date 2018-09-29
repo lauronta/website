@@ -41,7 +41,6 @@
 .container{
   margin: 0 auto;
   position: relative;
-  width: 100%;
 }
 
 /* END SECTION */
@@ -52,19 +51,20 @@
 
 @media only screen and (min-width: $small) {
   @include col-respons('-s');
+  .container{width: $small - $gutter;}
 }
 
 @media only screen and (min-width: $medium) {
   @include col-respons('-m');
+  .container{width: $medium - $gutter;}
 }
 
 @media only screen and (min-width: $large) {
   @include col-respons('-l');
+  .container{width: $large - $gutter;}
 }
 
 @media only screen and (min-width: $extra-large) {
   @include col-respons('-xl');
-  .container{
-    width: $extra-large - $gutter;
-  }
+  .container{width: $extra-large - $gutter;}
 }
